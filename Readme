@@ -1,0 +1,29 @@
+# CorianderDiseaseDetection
+Mini project. Coriander disease detection with CNN
+
+How to use
+
+1. ModelMaker
+    for making model
+    * optional run if dosen't have "plant_health_classifier.keras"
+    * if it already exist, dosen't  require to run this
+    * if need to update model put your data to Model_data folder and run this
+
+2. Image_rename
+    * use to rename
+    * name format => append date + order "DDMMYY_Order.jpg"
+
+3. Image_Divider
+    * Use to detected and cropping each targets in image
+    * Image_output will at test_out/potted plant
+
+4. Checker
+    * Check how a targets be
+    * Output of test will append to classed folder in each type of it
+
+5. h healthy plant
+  u unhealthy plant
+  w weed detected
+  n non target
+
+6. test image = out_put
