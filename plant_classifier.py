@@ -51,6 +51,10 @@ class PlantClassifier:
         # Create a DataFrame from the class counts
         df = pd.DataFrame.from_records([class_counts], columns=class_names.values())
 
+        # Check for None or 0 counts and replace them with 0
+        df.fillna(0, inplace=True)
+        df.replace({np.nan: 0}, inplace=True)
+
         # Add the current date and time
         df.insert(0, 'date_time', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
